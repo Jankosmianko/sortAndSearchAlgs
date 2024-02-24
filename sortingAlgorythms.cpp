@@ -1,11 +1,10 @@
 #include <iostream>
-//rozważyc dodanie using namespace std
 
 void bubbleSort(int tab[], int n){
     for(int i = 0; i < n - 1; i++){
         for(int j = 0; j < n - i - 1; j++){
             if(tab[j] > tab[j+1]){
-                std::swap(tab[j], tab[j+1]); // rozwazyc napisanie wlasnej funkcji swap
+                std::swap(tab[j], tab[j+1]);
             }
         }
     }
@@ -14,7 +13,7 @@ void bubbleSort(int tab[], int n){
         std::cout << tab[i] << " ";
     }
     std::cout << "\n";
-    //TODO: Zamienic na jedna funkcje printujaca tablice
+
 }
 
 void cocktailSort(int tab[], int n) {
