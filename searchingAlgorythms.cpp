@@ -34,19 +34,19 @@ int interpolationSearch(int arr[], int lo, int hi, int x)
     return -1;
 }
 
-int searchJump(int* tab, int n, int find) {
+int searchJump(int* lista, int n, int find) {
     int block = (int)(sqrt(n));
     int index = 0;
-    while (tab[min(block, n) - 1] < find) {
+    while (lista[min(block, n) - 1] < find) {
     index = block;
     block += (int)(sqrt(n));
     if (index >= n) return -1;
     }
-    while (tab[index] < find) {
+    while (lista[index] < find) {
         index++;
         if (index == min(block, n)) return -1;
     }
-      if (tab[index] == find) return index;
+      if (lista[index] == find) return index;
       return -1;
 }
 
