@@ -50,6 +50,10 @@ int searchJump(int* tab, int n, int find) {
       return -1;
 }
 
+int min(int a, int b) {
+    return (a < b) ? a : b;
+}
+
 int linear(int tab[], int n, int key)
 {
   for(int i = 0; i < n; i++)
